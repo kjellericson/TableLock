@@ -2,6 +2,9 @@
  Copyright 2014, Kjell.Ericson@haxx.se, version 2014-09-16
 
 The script uses classes for defining what parts to use for scrolling.
+
+Source at: https://github.com/kjellericson/TableLock.git
+
 You shall mark the things:
 
 1) One id for the table.

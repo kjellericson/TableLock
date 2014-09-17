@@ -1,4 +1,11 @@
 #!/usr/bin/perl
+#
+# This is the private generator for Kjell's page.
+# It generates my web output.  Use the index.html instead.
+#
+#
+
+
 require "/home/kjer/public_html/inc/header.pm";
 use CGI;
 
