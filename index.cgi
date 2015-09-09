@@ -10,19 +10,24 @@ require "/home/kjer/public_html/inc/header.pm";
 use CGI;
 
 print CGI::header();
-print get_menu();
-
-print show_banner();
-
 
 print "<html><head><title>TableLock - freeze panes, lock headers in HTML</title>\n";
-print "<script type='text/javascript' src='TableLock.js'></script>\n";
-print "</head>\n";
-print("<body onload='",
-      "TableLock(\"mytable_t1\", \"rowclass_t1\", \"colclass_t1\", \"lockclass_t1\"); ",
-      "TableLock(\"mytable_t2\", \"rowclass_t2\", \"colclass_t2\", \"lockclass_t2\"); ",
-      "'>\n");
-print "<h1>TableLock example</h1>\n";
+print qq(
+<script type='text/javascript' src='TableLock.js'></script>
+<script>
+	 function tablelock_onload()
+	 {
+	     TableLock("mytable_t1", "rowclass_t1", "colclass_t1", "lockclass_t1");
+	     TableLock("mytable_t2", "rowclass_t2", "colclass_t2", "lockclass_t2");
+	 }
+	 window.addEventListener("load", tablelock_onload);
+</script>
+);
+
+print get_menu();
+print show_banner();
+
+print "<h1 id=logo>TableLock example</h1>\n";
 
 $help = qq(<table class='table_class_name'>
   <tr>
