@@ -162,6 +162,7 @@ function TableLock_resize(tlt)
                             catch (e) {
                             }
                         }
+	                //newNode.style["z-index"] = 999;
                         newNode.innerHTML = node.innerHTML;
                         newNode.style.height = node.offsetHeight + "px";
                         newNode.style.width = node.offsetWidth + "px";
