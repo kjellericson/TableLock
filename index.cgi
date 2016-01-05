@@ -58,7 +58,7 @@ my $cols = 20;
 my $rows = 30;
 
 print qq(
-<b>Updated 2014-09-16</b>
+<b>Updated 2016-01-05</b>
 <p>
 Below you will have two tables with $cols columns and $rows rows.<br>
 When you scroll the content in your browser the headline or linedescription are freezed.
