@@ -29,7 +29,7 @@ print show_banner();
 
 print "<h1 id=logo>TableLock example</h1>\n";
 
-$help = qq(<table class='table_class_name'>
+$help = qq(<table id='table_class_name'>
   <tr>
     <td class='locked_class_name'>Upper left is moving both wayslocked</td>
     <td class='column_class_name'>column 1</td>
