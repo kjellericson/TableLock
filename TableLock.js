@@ -1,5 +1,5 @@
 /*****************************************************************
- Copyright 2014, Kjell.Ericson@haxx.se, version 2014-09-16
+ Copyright 2016, Kjell.Ericson@haxx.se, version 2016-01-05
 
 The script uses classes for defining what parts to use for scrolling.
 
@@ -20,7 +20,7 @@ You init the function by calling:
 
 The table is made up like this:
 
- <table class='table_class_name'>
+ <table id='table_class_name'>
   <tr>
     <td class='locked_class_name'>Upper left is moving both wayslocked</td>
     <td class='column_class_name'>column 1</td>
